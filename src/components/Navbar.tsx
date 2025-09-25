@@ -5,7 +5,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-[#1927eb] shadow-md relative z-50">
+    <nav className="bg-[#7D121B] shadow-md relative z-50">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="flex h-20 items-center justify-between">
           {/* Logo */}
@@ -29,7 +29,7 @@ const Navbar = () => {
                 console.log("Hamburger clicked");
                 setIsOpen(!isOpen);
               }}
-              className="inline-flex items-center justify-center p-2 rounded-md text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+              className="inline-flex items-center justify-center p-2 rounded-md text-white hover:bg-[#7D121B]-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
             >
               <svg
                 className="h-6 w-6"
@@ -62,7 +62,7 @@ const Navbar = () => {
 
       {/* Mobile Nav Links */}
       {isOpen && (
-        <div className="md:hidden px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-[#1927eb] relative z-50">
+        <div className="md:hidden px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-#FFD700 relative z-50">
           <NavLinks mobile={true} />
         </div>
       )}
@@ -85,9 +85,9 @@ const NavLinks = ({ mobile }) => {
   };
 
   const baseClass =
-    "text-white rounded-md px-3 py-2 hover:bg-blue-700 transition-colors duration-200 cursor-pointer border-2 border-transparent hover:border-white";
+    "text-white rounded-md px-3 py-2 hover:bg-[#FFD700] transition-colors duration-200 cursor-pointer border-2 border-transparent hover:border-white";
   const mobileClass =
-    "text-white block rounded-md px-3 py-2 hover:bg-blue-700 transition-colors duration-200 cursor-pointer w-full text-left border-2 border-transparent hover:border-white";
+    "text-white block rounded-md px-3 py-2 hover:bg-[#FFD700] transition-colors duration-200 cursor-pointer w-full text-left border-2 border-transparent hover:border-white";
   const linkClass = mobile ? mobileClass : baseClass;
 
   return (
@@ -110,17 +110,7 @@ const NavLinks = ({ mobile }) => {
           handleClick("/events");
         }}
       >
-        Events
-      </button>
-      <button
-        className={linkClass}
-        onClick={(e) => {
-          e.preventDefault();
-          e.stopPropagation();
-          handleClick("/organizations");
-        }}
-      >
-        Organizations
+        Events and Projects
       </button>
       <button
         className={linkClass}
