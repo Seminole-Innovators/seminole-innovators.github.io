@@ -84,10 +84,12 @@ const NavLinks = ({ mobile }) => {
     }
   };
 
+  // The 'rounded-md' class has been removed to get rid of the rounded corners.
+  // We've added hover classes for a pixelated border effect.
   const baseClass =
-    "text-white rounded-md px-3 py-2 hover:bg-[#FFD700] transition-colors duration-200 cursor-pointer border-2 border-transparent hover:border-white";
+    "text-white px-3 py-2 hover:bg-[#FFD700] transition-colors duration-200 cursor-pointer border-2 border-transparent hover:border-white hover:border-b-4 hover:border-r-4";
   const mobileClass =
-    "text-white block rounded-md px-3 py-2 hover:bg-[#FFD700] transition-colors duration-200 cursor-pointer w-full text-left border-2 border-transparent hover:border-white";
+    "text-white block px-3 py-2 hover:bg-[#FFD700] transition-colors duration-200 cursor-pointer w-full text-left border-2 border-transparent hover:border-white hover:border-b-4 hover:border-r-4";
   const linkClass = mobile ? mobileClass : baseClass;
 
   return (
@@ -110,20 +112,31 @@ const NavLinks = ({ mobile }) => {
           handleClick("/events");
         }}
       >
-        Events and Projects
+        Events
       </button>
       <button
         className={linkClass}
         onClick={(e) => {
           e.preventDefault();
           e.stopPropagation();
-          handleClick("/resources");
+          handleClick("/projects");
         }}
       >
-        Resources
+        Projects
+      </button>
+      <button
+        className={linkClass}
+        onClick={(e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          handleClick("/about");
+        }}
+      >
+        About
       </button>
     </>
   );
 };
+
 
 export default Navbar;
