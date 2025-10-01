@@ -1,13 +1,23 @@
 // StarField.tsx
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
+
+interface Star {
+  id: number;
+  x: number;
+  y: number;
+  size: number;
+  opacity: number;
+  speed: number;
+  twinkleSpeed: number;
+}
 
 const StarField = () => {
-  const [stars, setStars] = useState([]);
+  const [stars, setStars] = useState<Star[]>([]);
 
   useEffect(() => {
     // Generate initial stars
     const generateStars = () => {
-      const newStars = [];
+      const newStars: Star[] = [];
       for (let i = 0; i < 150; i++) {
         newStars.push({
           id: i,

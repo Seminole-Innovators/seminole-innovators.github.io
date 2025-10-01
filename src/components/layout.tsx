@@ -1,5 +1,4 @@
 // layout.tsx
-import React from "react";
 import { Outlet } from "react-router-dom";
 import Navbar from "./Navbar";
 import StarField from "./StarField"; // Ensure this is the correct path to your StarField component

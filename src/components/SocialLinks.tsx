@@ -61,7 +61,7 @@ const SocialLinks: React.FC = () => {
             href={link.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex h-20 w-full min-w-48 max-w-52 items-center justify-center gap-4 bg-[#7D121B] transition-colors duration-200 cursor-pointer border-2 border-transparent hover:bg-[#FFD700] hover:border-white hover:border-b-4 hover:border-r-4"
+            className="flex h-20 w-full min-w-48 max-w-60 items-center justify-center gap-4 bg-[#7D121B] transition-colors duration-200 cursor-pointer border-2 border-transparent hover:bg-[#FFD700] hover:border-white hover:border-b-4 hover:border-r-4"
           >
             <div className="text-2xl">{link.icon}</div>
             <span className="text-lg font-medium text-white">
