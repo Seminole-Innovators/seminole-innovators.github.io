@@ -23,12 +23,12 @@ const Navbar = () => {
           </div>
 
           {/* Desktop Nav Links */}
-          <div className="hidden md:flex md:items-center md:space-x-4 relative z-50">
+          {/* <div className="hidden md:flex md:items-center md:space-x-4 relative z-50">
             <NavLinks mobile={false} />
-          </div>
+          </div> */}
 
           {/* Hamburger button */}
-          <div className="flex md:hidden relative z-50 ml-2 flex-shrink-0">
+          {/* <div className="flex md:hidden relative z-50 ml-2 flex-shrink-0">
             <button
               onClick={() => {
                 console.log("Hamburger clicked");
@@ -62,7 +62,7 @@ const Navbar = () => {
                 )}
               </svg>
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
 
@@ -102,7 +102,7 @@ const NavLinks = ({ mobile }: NavLinksProps) => {
 
   return (
     <>
-      <button
+      {/* <button
         className={linkClass}
         onClick={(e) => {
           e.preventDefault();
@@ -141,7 +141,7 @@ const NavLinks = ({ mobile }: NavLinksProps) => {
         }}
       >
         About
-      </button>
+      </button> */}
     </>
   );
 };

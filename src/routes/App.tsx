@@ -4,7 +4,7 @@ const GlowingText = () => {
   return (
     <div className="relative z-10 flex flex-col items-center justify-start min-h-screen px-4 pt-20">
       <h1
-        className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-bold text-center leading-tight tracking-wide select-none mb-8"
+        className="text-4xl sm:text-5xl md:text-5xl lg:text-8xl xl:text-9xl font-bold text-center leading-tight tracking-wide select-none mb-8"
         style={{
           background: "linear-gradient(45deg, #ff4444, #ffdd44, #ff8844, #ff4444)",
           backgroundSize: "400% 400%",
@@ -21,7 +21,7 @@ const GlowingText = () => {
         <br />
         INNOVATORS
       </h1>
-      <div className="mt-6 w-full max-w-6xl">
+      <div className="mt-24 w-full max-w-6xl">
         <SocialLinks />
       </div>
     </div>
