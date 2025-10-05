@@ -3,5 +3,5 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/',  // <-- match the repo name you're deploying from
+  base: '/seminole-innovators.github.io',  // <-- match the repo name you're deploying from
 })
